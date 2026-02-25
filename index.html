@@ -7,28 +7,31 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a2e; }
-        .header { background: #6C63FF; color: white; padding: 40px 20px; text-align: center; }
-        .header h1 { font-size: 2rem; margin-bottom: 8px; }
-        .header p { opacity: 0.85; font-size: 1rem; }
+        body { font-family: 'Lexend', -apple-system, BlinkMacSystemFont, sans-serif; background: #FFF8F6; color: #1F2937; }
+        .header { background: #1A1714; color: #FAFAF9; padding: 48px 20px; text-align: center; }
+        .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+        .header h1 span { color: #FB923C; }
+        .header p { color: #8A7E74; font-size: 1rem; }
         .container { max-width: 720px; margin: 40px auto; padding: 0 20px; }
-        .card { background: white; border-radius: 12px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.15s; }
-        .card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
-        .card h2 { font-size: 1.2rem; margin-bottom: 6px; }
-        .card p { color: #666; font-size: 0.95rem; margin-bottom: 16px; }
-        .card a { display: inline-block; color: #6C63FF; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
-        .card a:hover { text-decoration: underline; }
-        .lang-row { display: flex; gap: 16px; flex-wrap: wrap; }
-        .lang-row a { padding: 8px 20px; border: 2px solid #6C63FF; border-radius: 8px; transition: background 0.15s, color 0.15s; }
-        .lang-row a:hover { background: #6C63FF; color: white; text-decoration: none; }
-        .footer { text-align: center; padding: 32px 20px; color: #999; font-size: 0.85rem; }
+        .card { background: white; border-radius: 16px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); border: 1px solid #F3F4F6; transition: transform 0.15s, box-shadow 0.15s; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(251,146,60,0.12); }
+        .card h2 { font-size: 1.2rem; font-weight: 600; margin-bottom: 6px; color: #1F2937; }
+        .card p { color: #6B7280; font-size: 0.95rem; margin-bottom: 18px; }
+        .lang-row { display: flex; gap: 12px; flex-wrap: wrap; }
+        .lang-row a { display: inline-block; padding: 10px 24px; border: 2px solid #FB923C; border-radius: 12px; color: #EA580C; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.15s; }
+        .lang-row a:hover { background: #FB923C; color: #431407; text-decoration: none; box-shadow: 0 4px 15px rgba(251,146,60,0.3); }
+        .footer { text-align: center; padding: 32px 20px; color: #9CA3AF; font-size: 0.85rem; }
+        .footer a { color: #FB923C; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>EnglishFit</h1>
+        <h1>English<span>Fit</span></h1>
         <p>Legal Documents</p>
     </div>
     <div class="container">
@@ -50,7 +53,7 @@
         </div>
     </div>
     <div class="footer">
-        &copy; 2026 D6 Apps &middot; <a href="mailto:d6apps.dev@gmail.com" style="color:#6C63FF;">d6apps.dev@gmail.com</a>
+        &copy; 2026 D6 Apps &middot; <a href="mailto:d6apps.dev@gmail.com">d6apps.dev@gmail.com</a>
     </div>
 </body>
 </html>
