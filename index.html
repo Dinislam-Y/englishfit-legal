@@ -1,59 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnglishFit — Legal</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="EnglishFit - English grammar practice application. Legal documents.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="EnglishFit - Legal">
+    <meta property="og:description" content="Legal documents for the EnglishFit language learning application">
+    <meta property="og:type" content="website">
+    <title>EnglishFit - Legal</title>
     <style>
+        :root {
+            --bg: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --text: #1a1a2e;
+            --text-secondary: #555;
+            --accent: #4361ee;
+            --accent-hover: #3a56d4;
+            --border: #e0e0e0;
+            --card-bg: #ffffff;
+            --card-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            --card-shadow-hover: 0 4px 24px rgba(0,0,0,0.14);
+        }
+        .dark {
+            --bg: #1a1a2e;
+            --bg-secondary: #16213e;
+            --text: #e0e0e0;
+            --text-secondary: #aaa;
+            --accent: #4cc9f0;
+            --accent-hover: #3ab8df;
+            --border: #2a2a4a;
+            --card-bg: #16213e;
+            --card-shadow: 0 2px 16px rgba(0,0,0,0.3);
+            --card-shadow-hover: 0 4px 24px rgba(0,0,0,0.5);
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lexend', -apple-system, BlinkMacSystemFont, sans-serif; background: #FFF8F6; color: #1F2937; }
-        .header { background: #1A1714; color: #FAFAF9; padding: 48px 20px; text-align: center; }
-        .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
-        .header h1 span { color: #FB923C; }
-        .header p { color: #8A7E74; font-size: 1rem; }
-        .container { max-width: 720px; margin: 40px auto; padding: 0 20px; }
-        .card { background: white; border-radius: 16px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); border: 1px solid #F3F4F6; transition: transform 0.15s, box-shadow 0.15s; }
-        .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(251,146,60,0.12); }
-        .card h2 { font-size: 1.2rem; font-weight: 600; margin-bottom: 6px; color: #1F2937; }
-        .card p { color: #6B7280; font-size: 0.95rem; margin-bottom: 18px; }
-        .lang-row { display: flex; gap: 12px; flex-wrap: wrap; }
-        .lang-row a { display: inline-block; padding: 10px 24px; border: 2px solid #FB923C; border-radius: 12px; color: #EA580C; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.15s; }
-        .lang-row a:hover { background: #FB923C; color: #431407; text-decoration: none; box-shadow: 0 4px 15px rgba(251,146,60,0.3); }
-        .footer { text-align: center; padding: 32px 20px; color: #9CA3AF; font-size: 0.85rem; }
-        .footer a { color: #FB923C; text-decoration: none; }
-        .footer a:hover { text-decoration: underline; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            transition: background 0.3s, color 0.3s;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-bar {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn {
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--bg);
+            color: var(--text);
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .btn:hover { border-color: var(--accent); color: var(--accent); }
+        .btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+            text-align: center;
+        }
+        .logo-text {
+            font-size: 2.5em;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+        .logo-text span { color: var(--accent); }
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+            margin-bottom: 48px;
+            max-width: 500px;
+        }
+        .cards {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 700px;
+            width: 100%;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px 28px;
+            text-decoration: none;
+            color: var(--text);
+            box-shadow: var(--card-shadow);
+            transition: all 0.25s;
+            flex: 1 1 280px;
+            max-width: 320px;
+            min-width: 260px;
+        }
+        .card:hover {
+            box-shadow: var(--card-shadow-hover);
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+        .card-icon {
+            font-size: 2em;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .card h2 {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.92em;
+            line-height: 1.5;
+        }
+        .card .arrow {
+            display: inline-block;
+            margin-top: 16px;
+            color: var(--accent);
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+        }
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        footer a:hover { text-decoration: underline; }
+        .lang-content { display: none; }
+        .lang-content.active { display: flex; }
+        .lang-inline { display: none; }
+        .lang-inline.active { display: inline; }
+        @media (max-width: 600px) {
+            .logo-text { font-size: 2em; }
+            .hero { padding: 40px 16px; }
+            .cards { gap: 16px; }
+            .card { padding: 24px 20px; }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>English<span>Fit</span></h1>
-        <p>Legal Documents</p>
+    <div class="top-bar">
+        <button class="btn active" id="btn-ru" onclick="switchLang('ru')">RU</button>
+        <button class="btn" id="btn-en" onclick="switchLang('en')">EN</button>
+        <button class="btn" id="btn-theme" onclick="toggleTheme()" title="Toggle theme">&#9790;</button>
     </div>
-    <div class="container">
-        <div class="card">
-            <h2>Privacy Policy</h2>
-            <p>How we handle your data, what we collect (and what we don't), your rights and controls.</p>
-            <div class="lang-row">
-                <a href="privacy-en.html">English</a>
-                <a href="privacy-ru.html">Русский</a>
-            </div>
+
+    <div class="hero">
+        <div class="logo-text">English<span>Fit</span></div>
+
+        <p class="tagline">
+            <span class="lang-inline active" id="tagline-ru">Юридические документы приложения</span>
+            <span class="lang-inline" id="tagline-en">Application legal documents</span>
+        </p>
+
+        <!-- RU cards -->
+        <div id="cards-ru" class="cards lang-content active">
+            <a href="privacy-policy.html" class="card">
+                <span class="card-icon">&#128274;</span>
+                <h2>Политика конфиденциальности</h2>
+                <p>Информация о сборе, хранении и защите ваших данных при использовании EnglishFit.</p>
+                <span class="arrow">Читать &rarr;</span>
+            </a>
+            <a href="terms-of-service.html" class="card">
+                <span class="card-icon">&#128221;</span>
+                <h2>Условия использования</h2>
+                <p>Правила бесплатного использования приложения, интеллектуальная собственность и ответственность.</p>
+                <span class="arrow">Читать &rarr;</span>
+            </a>
+            <a href="account-deletion.html" class="card">
+                <span class="card-icon">&#128465;</span>
+                <h2>Удаление аккаунта</h2>
+                <p>Запрос на удаление аккаунта EnglishFit и связанных облачных данных без установки приложения.</p>
+                <span class="arrow">Открыть &rarr;</span>
+            </a>
         </div>
-        <div class="card">
-            <h2>Terms of Service</h2>
-            <p>Rules and conditions for using EnglishFit, subscriptions, and your rights.</p>
-            <div class="lang-row">
-                <a href="terms-en.html">English</a>
-                <a href="terms-ru.html">Русский</a>
-            </div>
+
+        <!-- EN cards -->
+        <div id="cards-en" class="cards lang-content">
+            <a href="privacy-policy.html" class="card">
+                <span class="card-icon">&#128274;</span>
+                <h2>Privacy Policy</h2>
+                <p>Information about how EnglishFit collects, stores, and protects your data.</p>
+                <span class="arrow">Read &rarr;</span>
+            </a>
+            <a href="terms-of-service.html" class="card">
+                <span class="card-icon">&#128221;</span>
+                <h2>Terms of Service</h2>
+                <p>Rules for free use of the App, intellectual property, and liability.</p>
+                <span class="arrow">Read &rarr;</span>
+            </a>
+            <a href="account-deletion.html" class="card">
+                <span class="card-icon">&#128465;</span>
+                <h2>Account Deletion</h2>
+                <p>Request deletion of your EnglishFit account and associated cloud data without reinstalling the App.</p>
+                <span class="arrow">Open &rarr;</span>
+            </a>
         </div>
     </div>
-    <div class="footer">
-        &copy; 2026 D6 Apps &middot; <a href="mailto:d6apps.dev@gmail.com">d6apps.dev@gmail.com</a>
-    </div>
+
+    <footer>
+        <span class="lang-inline active" id="footer-ru">&copy; 2026 EnglishFit. Все права защищены. &middot; <a href="mailto:d6apps.dev@gmail.com">d6apps.dev@gmail.com</a></span>
+        <span class="lang-inline" id="footer-en">&copy; 2026 EnglishFit. All rights reserved. &middot; <a href="mailto:d6apps.dev@gmail.com">d6apps.dev@gmail.com</a></span>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('cards-ru').classList.toggle('active', lang === 'ru');
+            document.getElementById('cards-en').classList.toggle('active', lang === 'en');
+            document.getElementById('tagline-ru').classList.toggle('active', lang === 'ru');
+            document.getElementById('tagline-en').classList.toggle('active', lang === 'en');
+            document.getElementById('footer-ru').classList.toggle('active', lang === 'ru');
+            document.getElementById('footer-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.documentElement.lang = lang;
+            localStorage.setItem('ef-lang', lang);
+        }
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+            var isDark = document.body.classList.contains('dark');
+            document.getElementById('btn-theme').innerHTML = isDark ? '&#9788;' : '&#9790;';
+            localStorage.setItem('ef-theme', isDark ? 'dark' : 'light');
+        }
+        (function() {
+            var savedTheme = localStorage.getItem('ef-theme');
+            if (savedTheme === 'dark') { document.body.classList.add('dark'); document.getElementById('btn-theme').innerHTML = '&#9788;'; }
+            var savedLang = localStorage.getItem('ef-lang');
+            if (savedLang) switchLang(savedLang);
+        })();
+    </script>
 </body>
 </html>

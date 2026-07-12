@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request deletion of an EnglishFit account and associated cloud data.">
+    <meta name="robots" content="index, follow">
+    <title>EnglishFit — Account Deletion</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #f7f8fb;
+            --surface: #ffffff;
+            --text: #172033;
+            --muted: #5c667a;
+            --accent: #d97745;
+            --border: #dfe3eb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111827;
+                --surface: #182235;
+                --text: #f3f4f6;
+                --muted: #b7c0d1;
+                --border: #334155;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.65;
+        }
+
+        main {
+            width: min(880px, calc(100% - 32px));
+            margin: 40px auto;
+        }
+
+        .panel {
+            margin-bottom: 24px;
+            padding: clamp(24px, 5vw, 48px);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+        }
+
+        h1, h2 { line-height: 1.25; }
+        h1 { margin-top: 0; }
+        h2 { margin-top: 32px; }
+        p, li { color: var(--muted); }
+        strong { color: var(--text); }
+
+        .action {
+            display: inline-block;
+            margin: 8px 0 16px;
+            padding: 12px 18px;
+            color: #ffffff;
+            background: var(--accent);
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .back { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="panel" lang="ru">
+            <h1>Удаление аккаунта EnglishFit</h1>
+            <p>Разработчик: <strong>D6 Apps</strong>. Эта страница позволяет запросить удаление аккаунта EnglishFit и связанных облачных данных, даже если приложение уже удалено с устройства.</p>
+
+            <h2>Как отправить запрос</h2>
+            <p>Напишите с адреса, который использовался для аккаунта EnglishFit. В теме письма укажите «Удаление аккаунта EnglishFit». Не отправляйте пароль или коды входа.</p>
+            <a class="action" href="mailto:d6apps.dev@gmail.com?subject=Удаление%20аккаунта%20EnglishFit">Отправить запрос по email</a>
+            <p>Если письмо отправлено с другого адреса, мы можем запросить безопасное подтверждение владения аккаунтом. Запрос будет обработан в течение 30 дней.</p>
+
+            <h2>Какие данные удаляются</h2>
+            <ul>
+                <li>учётная запись Firebase Authentication;</li>
+                <li>связанные с аккаунтом документы Cloud Firestore: профиль, учебный прогресс, достижения и настройки синхронизации.</li>
+            </ul>
+            <p>Локальные данные остаются только на устройстве и удаляются через настройки системы или при удалении приложения. Агрегированные или обезличенные аналитические показатели могут храниться согласно <a href="privacy-policy.html">Политике конфиденциальности</a>.</p>
+            <p>Альтернатива в приложении: <strong>Настройки → Удалить аккаунт</strong>.</p>
+        </section>
+
+        <section class="panel" lang="en">
+            <h1>Delete your EnglishFit account</h1>
+            <p>Developer: <strong>D6 Apps</strong>. This page lets you request deletion of your EnglishFit account and associated cloud data even if the App is no longer installed.</p>
+
+            <h2>Submit a request</h2>
+            <p>Email us from the address used for your EnglishFit account. Use “EnglishFit account deletion” as the subject. Never send your password or sign-in codes.</p>
+            <a class="action" href="mailto:d6apps.dev@gmail.com?subject=EnglishFit%20account%20deletion">Email an account-deletion request</a>
+            <p>If you write from another address, we may request a safe verification of account ownership. We will process the request within 30 days.</p>
+
+            <h2>Data that will be deleted</h2>
+            <ul>
+                <li>the Firebase Authentication account;</li>
+                <li>associated Cloud Firestore documents, including profile, learning progress, achievements, and synchronization settings.</li>
+            </ul>
+            <p>Local data exists only on the device and can be removed through system settings or by uninstalling the App. Aggregated or de-identified analytics may be retained as described in the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+            <p>In-app alternative: <strong>Settings → Delete Account</strong>.</p>
+        </section>
+
+        <p><a class="back" href="index.html">&larr; EnglishFit legal documents</a></p>
+    </main>
+</body>
+</html>

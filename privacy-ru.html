@@ -3,180 +3,476 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Политика конфиденциальности — EnglishFit</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="EnglishFit Privacy Policy - English Language Practice Application">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="EnglishFit - Privacy Policy">
+    <meta property="og:description" content="Privacy Policy for the EnglishFit language learning application">
+    <meta property="og:type" content="website">
+    <title>EnglishFit - Privacy Policy</title>
     <style>
+        :root {
+            --bg: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --text: #1a1a2e;
+            --text-secondary: #555;
+            --accent: #4361ee;
+            --accent-hover: #3a56d4;
+            --border: #e0e0e0;
+            --card-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .dark {
+            --bg: #1a1a2e;
+            --bg-secondary: #16213e;
+            --text: #e0e0e0;
+            --text-secondary: #aaa;
+            --accent: #4cc9f0;
+            --accent-hover: #3ab8df;
+            --border: #2a2a4a;
+            --card-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Lexend', -apple-system, BlinkMacSystemFont, sans-serif; background: #FFF8F6; color: #1F2937; line-height: 1.7; }
-        .nav { background: #1A1714; padding: 16px 20px; display: flex; align-items: center; gap: 16px; }
-        .nav a { color: #FB923C; text-decoration: none; font-weight: 700; }
-        .nav span { color: #8A7E74; }
-        .lang-switch { margin-left: auto; }
-        .lang-switch a { color: #FAFAF9; opacity: 0.7; font-size: 0.9rem; text-decoration: none; }
-        .lang-switch a:hover { opacity: 1; }
-        .container { max-width: 760px; margin: 32px auto; padding: 0 20px 60px; }
-        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 4px; }
-        h2 { font-size: 1.3rem; font-weight: 600; margin-top: 36px; margin-bottom: 12px; color: #1F2937; border-bottom: 3px solid #FB923C; padding-bottom: 8px; }
-        h3 { font-size: 1.1rem; font-weight: 600; margin-top: 20px; margin-bottom: 8px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            transition: background 0.3s, color 0.3s;
+        }
+        .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .top-bar-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .top-bar-left a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .top-bar-left a:hover { text-decoration: underline; }
+        .controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .btn {
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--bg);
+            color: var(--text);
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .btn:hover { border-color: var(--accent); color: var(--accent); }
+        .btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 4px;
+            color: var(--text);
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.05em;
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            margin-bottom: 32px;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 1.35em;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: var(--text);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 6px;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
         p { margin-bottom: 12px; }
-        .meta { color: #6B7280; font-size: 0.9rem; margin-bottom: 24px; }
-        a { color: #EA580C; }
-        a:hover { color: #FB923C; }
-        hr { border: none; border-top: 1px solid #E5E7EB; margin: 28px 0; }
-        .indent { padding-left: 24px; }
-        strong { color: #1F2937; }
-        .footer { text-align: center; padding: 24px; color: #9CA3AF; font-size: 0.85rem; }
-        .footer a { color: #FB923C; text-decoration: none; }
+        .indent {
+            padding-left: 24px;
+            margin-bottom: 8px;
+        }
+        .indent p { margin-bottom: 8px; }
+        a { color: var(--accent); }
+        a:hover { color: var(--accent-hover); }
+        strong.section-num { color: var(--accent); }
+        .disclaimer {
+            margin-top: 40px;
+            padding: 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            line-height: 1.6;
+        }
+        .copyright {
+            margin-top: 24px;
+            color: var(--text-secondary);
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5em; }
+            .container { padding: 24px 16px 60px; }
+            .top-bar { padding: 10px 16px; }
+        }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <a href="index.html">EnglishFit</a>
-        <span>/ Политика конфиденциальности</span>
-        <div class="lang-switch"><a href="privacy-en.html">English</a></div>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <a href="index.html">EnglishFit</a>
+        </div>
+        <div class="controls">
+            <button class="btn active" id="btn-ru" onclick="switchLang('ru')">RU</button>
+            <button class="btn" id="btn-en" onclick="switchLang('en')">EN</button>
+            <button class="btn" id="btn-theme" onclick="toggleTheme()" title="Toggle theme">&#9790;</button>
+        </div>
     </div>
+
     <div class="container">
-        <h1>Политика конфиденциальности</h1>
-        <p class="meta"><strong>EnglishFit — Приложение для практики языков</strong><br>Последнее обновление: Февраль 2026 г.</p>
+        <!-- RUSSIAN VERSION -->
+        <div id="lang-ru" class="lang-content active">
+            <h1>Политика конфиденциальности</h1>
+            <p class="subtitle"><strong>EnglishFit</strong> &mdash; Приложение для практики английского языка</p>
+            <p class="last-updated">Последнее обновление: 10 июля 2026 г.</p>
 
-        <h2>1. Введение</h2>
-        <p>Настоящая Политика конфиденциальности (далее — «Политика») описывает порядок обращения с информацией при использовании приложения EnglishFit (далее — «Приложение», «мы», «нас» или «наш»). Загружая, устанавливая или используя Приложение, Вы (далее — «Пользователь», «Вы», «Ваш») подтверждаете, что ознакомились с настоящей Политикой и понимаете её содержание.</p>
-        <p>Мы стремимся защитить Вашу конфиденциальность. EnglishFit разработан как <strong>офлайн-приложение с опциональной облачной синхронизацией</strong> — Ваши данные хранятся преимущественно на Вашем устройстве, а при создании учётной записи могут быть синхронизированы с защищённым облачным хранилищем.</p>
+            <h2>1. Введение</h2>
+            <p>Настоящая Политика конфиденциальности (далее &mdash; &laquo;Политика&raquo;) описывает порядок обращения с информацией при использовании приложения EnglishFit (далее &mdash; &laquo;Приложение&raquo;, &laquo;мы&raquo;, &laquo;нас&raquo; или &laquo;наш&raquo;). Загружая, устанавливая или используя Приложение, Вы (далее &mdash; &laquo;Пользователь&raquo;, &laquo;Вы&raquo;, &laquo;Ваш&raquo;) подтверждаете, что ознакомились с настоящей Политикой и понимаете её содержание.</p>
+            <p>Мы стремимся защитить Вашу конфиденциальность. EnglishFit разработан как <strong>офлайн-приложение с опциональной облачной синхронизацией</strong> &mdash; Ваши данные хранятся преимущественно на Вашем устройстве, а при создании учётной записи могут быть синхронизированы с защищённым облачным хранилищем. Настоящая Политика разъясняет, к какой информации Приложение получает доступ, как она используется и какие права Вы имеете в отношении этой информации.</p>
 
-        <h2>2. Информация, которую мы собираем</h2>
+            <h2>2. Информация, которую мы собираем</h2>
+            <h3>2.1. Данные, хранимые локально на устройстве</h3>
+            <p>EnglishFit хранит следующую информацию <strong>на Вашем устройстве или в локальном хранилище приложения в браузере</strong> с использованием доступных локальных механизмов хранения:</p>
+            <div class="indent">
+                <p>(а) <strong>Информация профиля</strong>: отображаемое имя, текст биографии и фото аватара, предоставленные Вами добровольно;</p>
+                <p>(б) <strong>Прогресс обучения</strong>: статус прохождения уроков, баллы, прогресс изучения словарного запаса, данные о сериях занятий и история практики;</p>
+                <p>(в) <strong>Настройки приложения</strong>: языковые настройки, параметры уведомлений, выбор темы оформления и другие пользовательские параметры.</p>
+            </div>
 
-        <h3>2.1. Данные, хранимые локально на устройстве</h3>
-        <p>EnglishFit хранит следующую информацию <strong>исключительно на Вашем устройстве</strong> с использованием локальных механизмов хранения (SharedPreferences, зашифрованного защищённого хранилища и локального файлового хранилища):</p>
-        <div class="indent">
-            <p>(а) <strong>Информация профиля</strong>: отображаемое имя, текст биографии и фото аватара, предоставленные Вами добровольно;</p>
-            <p>(б) <strong>Прогресс обучения</strong>: статус прохождения уроков, баллы, прогресс изучения словарного запаса, данные о сериях занятий и история практики;</p>
-            <p>(в) <strong>Настройки приложения</strong>: языковые настройки, параметры уведомлений, выбор темы оформления и другие пользовательские параметры;</p>
-            <p>(г) <strong>Статус подписки</strong>: текущий тип подписки и дата окончания, кэшированные локально в зашифрованном защищённом хранилище для проверки прав доступа в офлайн-режиме. Эти данные защищены шифрованием на уровне платформы (AES-256 на Android, Keychain на iOS) и проверкой целостности. Платёжные данные не хранятся.</p>
+            <h3>2.2. Информация, которую мы НЕ собираем</h3>
+            <p>Независимо от того, используете ли Вы гостевой или зарегистрированный аккаунт, EnglishFit <strong>НЕ</strong> собирает, не передаёт и не хранит:</p>
+            <div class="indent">
+                <p>(а) точные данные GPS-геолокации;</p>
+                <p>(б) рекламные идентификаторы или цифровые отпечатки оборудования;</p>
+                <p>(в) контакты, календарь или иные персональные данные с Вашего устройства;</p>
+                <p>(г) какие-либо данные в целях рекламы, профилирования или продажи третьим лицам.</p>
+            </div>
+
+            <h3>2.3. Ограниченная продуктовая аналитика</h3>
+            <p>В release-сборках EnglishFit использует <strong>Firebase Analytics</strong>, чтобы понять, работают ли основные сценарии практики и повторения ошибок. Могут передаваться события начала, продолжения и повторения тренировки, идентификаторы уроков, grammar tags, app-instance identifier и техническая информация о версии приложения и устройстве, которую Firebase обрабатывает согласно своей документации. Google может определять примерный регион по сетевым данным; точная GPS-геолокация не собирается.</p>
+            <p>Сбор рекламного идентификатора и сигналы персонализации рекламы отключены. Аналитика не используется для рекламы, продажи данных или межприложного профилирования.</p>
+
+            <h3>2.4. Опциональная регистрация учётной записи</h3>
+            <p>EnglishFit предлагает опциональное создание учётной записи с помощью email/пароля или входа через Google. Вы также можете использовать Приложение в гостевом режиме без регистрации.</p>
+            <p>Если Вы решите создать учётную запись:</p>
+            <div class="indent">
+                <p>(а) <strong>Регистрация по email</strong>: Ваш адрес электронной почты и зашифрованный пароль хранятся безопасно через Firebase Authentication;</p>
+                <p>(б) <strong>Вход через Google</strong>: Аутентификация осуществляется Google. Мы получаем только базовую информацию профиля (имя, email), необходимую для идентификации учётной записи;</p>
+                <p>(в) <strong>Облачная синхронизация</strong>: Ваш прогресс обучения может быть синхронизирован с облачным хранилищем для доступа с разных устройств;</p>
+                <p>(г) <strong>Гостевой режим</strong>: Весь функционал остаётся доступным без создания аккаунта. Учебный прогресс гостя хранится локально; ограниченная продуктовая аналитика из Раздела 2.3 применяется и в гостевом режиме release-сборки.</p>
+            </div>
+
+            <h2>3. Как мы используем информацию</h2>
+            <p>Информация, описанная в настоящей Политике, используется <strong>исключительно</strong> в следующих целях:</p>
+            <div class="indent">
+                <p>(а) <strong>Персонализация</strong>: отображение выбранного Вами имени профиля, биографии и аватара в Приложении;</p>
+                <p>(б) <strong>Отслеживание прогресса обучения</strong>: фиксация результатов уроков, уровня освоения словарного запаса, серий занятий и истории практики для отслеживания Вашего прогресса;</p>
+                <p>(в) <strong>Сохранение настроек</strong>: сохранение выбранных Вами параметров (язык, тема, уведомления) между сеансами работы;</p>
+                <p>(г) <strong>Предоставление учебного контента</strong>: загрузка встроенного контента уроков (хранящегося в виде локальных JSON-файлов) для использования в офлайн-режиме;</p>
+                <p>(д) <strong>Улучшение продукта</strong>: измерение основных сценариев практики и повторения ошибок с помощью ограниченной аналитики.</p>
+            </div>
+            <p>Никакая информация не используется в рекламных целях, для продажи третьим лицам или межприложного профилирования.</p>
+
+            <h2>4. Хранение и безопасность данных</h2>
+            <p><strong>4.1. Локальное хранение.</strong> Данные профиля, учебного прогресса и настроек хранятся на Вашем устройстве или в локальном хранилище приложения в браузере. Учебный прогресс гостевых пользователей хранится локально; данные зарегистрированных пользователей могут синхронизироваться, как описано в Разделе 4.2, а ограниченные аналитические события обрабатываются отдельно, как описано в Разделе 2.3.</p>
+            <p><strong>4.2. Облачное хранение для зарегистрированных пользователей.</strong> При создании учётной записи следующие данные синхронизируются с Google Cloud Firestore для обеспечения доступа с разных устройств и резервного копирования:</p>
+            <div class="indent">
+                <p>(а) информация аккаунта: адрес электронной почты, отображаемое имя и URL фото профиля;</p>
+                <p>(б) прогресс обучения: пройденные уроки, баллы и общее количество звёзд;</p>
+                <p>(в) данные профиля пользователя;</p>
+                <p>(г) разблокированные достижения и даты их получения;</p>
+                <p>(д) прогресс по теории: какие теории уроков были открыты и какие квизы по теории были пройдены;</p>
+                <p>(е) прогресс по словарному запасу: статус изучения каждого слова, количество правильных ответов и даты последней практики;</p>
+                <p>(ж) прогресс по упражнениям Binary Choice: количество пройденных итераций по каждому упражнению;</p>
+                <p>(з) временная метка последней синхронизации.</p>
+            </div>
+            <p>Облачные данные хранятся на инфраструктуре Google (Firebase / Google Cloud Platform) и подчиняются <a href="https://cloud.google.com/security" target="_blank" rel="noopener">практикам безопасности Google Cloud</a>.</p>
+            <p><strong>4.3.</strong> Локально хранимые данные защищены моделью безопасности операционной системы Вашего устройства, включая изоляцию приложений (sandboxing). Доступ к данным Приложения ограничен самим Приложением и не предоставляется другим приложениям.</p>
+            <p><strong>4.4.</strong> Данные аутентификации (email и зашифрованный пароль или учётные данные Google) управляются Firebase Authentication &mdash; сервисом безопасного управления идентификацией от Google. Пароли никогда не хранятся в открытом виде.</p>
+            <p><strong>4.5.</strong> Мы рекомендуем Пользователям соблюдать стандартные меры безопасности устройства, включая блокировку экрана, шифрование устройства и своевременное обновление операционной системы для защиты локально хранимых данных.</p>
+            <p><strong>4.6.</strong> Разработчик имеет доступ к данным зарегистрированных пользователей, хранящимся в облаке, в целях технического обслуживания сервиса и поддержки. Разработчик не имеет доступа к данным, хранящимся локально на Вашем устройстве.</p>
+
+            <h2>5. Доступ к камере и фотографиям</h2>
+            <p><strong>5.1.</strong> Приложение запрашивает доступ к камере и/или фотогалерее Вашего устройства <strong>исключительно</strong> для установки фото аватара профиля.</p>
+            <p><strong>5.2.</strong> Доступ к камере и галерее является:</p>
+            <div class="indent">
+                <p>(а) <strong>Необязательным</strong> &mdash; Приложение полноценно функционирует без предоставления данного разрешения;</p>
+                <p>(б) <strong>Инициируемым пользователем</strong> &mdash; доступ запрашивается только при выборе Вами действия по установке или изменению фото аватара;</p>
+                <p>(в) <strong>Локальным</strong> &mdash; выбранная или сделанная фотография хранится исключительно на Вашем устройстве в локальном хранилище Приложения и никогда не загружается, не передаётся и не предоставляется каким-либо внешним сервисам или серверам.</p>
+            </div>
+            <p><strong>5.3.</strong> Вы можете отозвать разрешение на доступ к камере или галерее в любое время через системные настройки Вашего устройства без влияния на остальной функционал Приложения.</p>
+
+            <h2>6. Преобразование текста в речь</h2>
+            <p><strong>6.1.</strong> Приложение использует встроенный механизм преобразования текста в речь (TTS) устройства для обеспечения аудиопроизношения фраз и словарного запаса.</p>
+            <p><strong>6.2.</strong> Обработка текста в речь выполняется <strong>полностью на Вашем устройстве</strong> с использованием системной службы TTS. Приложение не передаёт текстовые или аудиоданные на внешние серверы для данной цели.</p>
+            <p><strong>6.3.</strong> Доступность и качество функции TTS зависят от установленных на Вашем устройстве движков TTS и языковых пакетов.</p>
+
+            <h2>7. Сторонние сервисы</h2>
+            <p><strong>7.1.</strong> EnglishFit интегрирует следующие сторонние сервисы:</p>
+            <div class="indent">
+                <p>(а) <strong>Firebase Authentication</strong> (Google) &mdash; для безопасного управления учётными записями, входа по email/паролю и входа через Google;</p>
+                <p>(б) <strong>Cloud Firestore</strong> (Google) &mdash; для облачного хранения и синхронизации прогресса обучения и данных профиля зарегистрированных пользователей;</p>
+                <p>(в) <strong>Firebase Analytics</strong> (Google) &mdash; для ограниченной продуктовой аналитики основных сценариев практики, описанной в Разделе 2.3.</p>
+            </div>
+            <p>Сервисы Firebase регулируются <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Политикой конфиденциальности Google</a> и <a href="https://firebase.google.com/terms" target="_blank" rel="noopener">Условиями использования Firebase</a>.</p>
+            <p><strong>7.2.</strong> Весь учебный контент встроен в Приложение в виде локальных JSON-файлов и не требует сетевого доступа для функционирования. Firebase используется для опциональных аккаунтов, синхронизации данных и ограниченной продуктовой аналитики. Приложение не подключает сервисы внутренних покупок.</p>
+            <p><strong>7.3.</strong> EnglishFit <strong>не</strong> использует рекламные сети и не передаёт пользовательские данные третьим лицам в рекламных целях или для профилирования. Аналитика используется только для улучшения продукта и измерения основных сценариев практики.</p>
+            <p><strong>7.4.</strong> В случае если будущие версии Приложения будут включать дополнительные интеграции со сторонними сервисами (такие как функции на базе ИИ), настоящая Политика конфиденциальности будет соответствующим образом обновлена до или одновременно с выпуском таких функций. Пользователи будут уведомлены о существенных изменениях в порядке, описанном в Разделе 10.</p>
+
+            <h2>8. Конфиденциальность детей</h2>
+            <p><strong>8.1.</strong> EnglishFit является приложением для практики языков, предназначенным для широкой аудитории. Мы сознательно не собираем персональную информацию детей младше 13 лет (или иного применимого возраста цифрового согласия в Вашей юрисдикции).</p>
+            <p><strong>8.2.</strong> Регистрация учётной записи является опциональной и не требуется для использования Приложения. В гостевом режиме данные учётной записи и облачный учебный прогресс не создаются; при этом Firebase Analytics может обрабатывать ограниченные события, описанные в Разделе 2.3. Для зарегистрированных пользователей младше применимого возраста цифрового согласия требуется согласие родителя или законного представителя.</p>
+            <p><strong>8.3.</strong> Если Вы являетесь родителем или законным представителем и полагаете, что Ваш ребёнок предоставил персональную информацию через Приложение сверх описанного в настоящей Политике, пожалуйста, свяжитесь с нами, используя контактную информацию, указанную в Разделе 11.</p>
+
+            <h2>9. Хранение и удаление данных</h2>
+            <p><strong>9.1.</strong> <strong>Локальные данные</strong> хранятся на Вашем устройстве в течение всего периода установки Приложения. <strong>Облачные данные</strong> зарегистрированных пользователей хранятся на серверах Firebase в течение всего периода существования учётной записи. Данные Firebase Analytics хранятся в соответствии с настройками проекта Firebase и правилами Google; агрегированные или обезличенные показатели могут сохраняться дольше.</p>
+            <p><strong>9.2.</strong> Вы можете удалить свои локальные данные в любое время следующими способами:</p>
+            <div class="indent">
+                <p>(а) <strong>Очистка данных приложения</strong> через системные настройки Вашего устройства (Настройки &rarr; Приложения &rarr; EnglishFit &rarr; Очистить данные / Очистить хранилище);</p>
+                <p>(б) <strong>Удаление Приложения</strong>, что приводит к удалению всех локально хранимых данных Приложения с Вашего устройства;</p>
+                <p>(в) Использование <strong>встроенных функций управления данными</strong>, если таковые доступны, для сброса прогресса или удаления информации профиля.</p>
+            </div>
+            <p><strong>9.3. Для зарегистрированных пользователей</strong> Вы можете удалить свои облачные данные следующими способами:</p>
+            <div class="indent">
+                <p>(а) <strong>Удаление учётной записи</strong> через Настройки &rarr; Удалить аккаунт в Приложении. Процесс включает двухэтапное подтверждение (диалог подтверждения с последующим вводом слова-подтверждения). При удалении безвозвратно удаляются: все облачные данные с серверов Firebase (документы Firestore), все локально хранимые данные и учётная запись Firebase Authentication. Для пользователей Google Sign-In также выполняется отключение аккаунта Google от Приложения. Если сессия аутентификации истекла, перед удалением потребуется повторная аутентификация (ввод пароля или повторный вход через Google);</p>
+                <p>(б) <strong>Обращение к Разработчику</strong> через публичную страницу <a href="account-deletion.html">удаления аккаунта EnglishFit</a> с запросом на удаление данных без повторной установки Приложения.</p>
+            </div>
+            <p><strong>9.4.</strong> После удаления локально хранимые данные не подлежат восстановлению. Удаление облачных данных является окончательным и необратимым после завершения процесса удаления.</p>
+
+            <h2>10. Изменения настоящей Политики</h2>
+            <p><strong>10.1.</strong> Мы оставляем за собой право обновлять или изменять настоящую Политику конфиденциальности в любое время. Изменения отражаются обновлённой датой &laquo;Последнее обновление&raquo; в начале документа.</p>
+            <p><strong>10.2.</strong> О существенных изменениях настоящей Политики &mdash; в особенности связанных с введением сбора данных, сетевой передачи, интеграции сторонних сервисов или изменением модели локального хранения данных &mdash; Пользователи будут уведомлены посредством:</p>
+            <div class="indent">
+                <p>(а) заметного уведомления внутри Приложения;</p>
+                <p>(б) обновлённой Политики конфиденциальности, доступной в Приложении и/или на странице его размещения (например, App Store, Google Play Store).</p>
+            </div>
+            <p><strong>10.3.</strong> Продолжение использования Приложения после публикации изменений означает Ваше согласие с такими изменениями.</p>
+
+            <h2>11. Контактная информация</h2>
+            <p><strong>11.1.</strong> По вопросам, связанным с настоящей Политикой конфиденциальности или практиками обработки данных Приложения, Вы можете связаться с Разработчиком:</p>
+            <div class="indent">
+                <p>Email: <a href="mailto:d6apps.dev@gmail.com">d6apps.dev@gmail.com</a></p>
+            </div>
+            <p><strong>11.2.</strong> Мы приложим разумные усилия для своевременного ответа на запросы, связанные с конфиденциальностью.</p>
+
+            <div class="disclaimer">
+                Используя данное приложение, Вы подтверждаете, что ознакомились с настоящей Политикой конфиденциальности, понимаете её содержание и принимаете к сведению описанные в ней практики обработки данных.
+            </div>
+            <p class="copyright">&copy; 2026 EnglishFit. Все права защищены.</p>
         </div>
 
-        <h3>2.2. Информация, которую мы НЕ собираем</h3>
-        <p>Независимо от того, используете ли Вы гостевой или зарегистрированный аккаунт, EnglishFit <strong>НЕ</strong> собирает, не передаёт и не хранит:</p>
-        <div class="indent">
-            <p>(а) данные о местоположении или геолокации;</p>
-            <p>(б) идентификаторы устройства, рекламные идентификаторы или цифровые отпечатки оборудования;</p>
-            <p>(в) аналитику использования, данные поведенческого отслеживания или телеметрию;</p>
-            <p>(г) контакты, календарь или иные персональные данные с Вашего устройства;</p>
-            <p>(д) какие-либо данные в целях рекламы, профилирования или продажи третьим лицам.</p>
+        <!-- ENGLISH VERSION -->
+        <div id="lang-en" class="lang-content">
+            <h1>Privacy Policy</h1>
+            <p class="subtitle"><strong>EnglishFit</strong> &mdash; English Language Practice Application</p>
+            <p class="last-updated">Last updated: July 10, 2026</p>
+
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy (hereinafter "Policy") describes how EnglishFit (hereinafter "Application", "App", "we", "us", or "our") handles information when You (hereinafter "User", "You", or "Your") download, install, access, or use the Application.</p>
+            <p>We are committed to protecting Your privacy. EnglishFit is designed as an <strong>offline-first application with optional cloud synchronization</strong> &mdash; Your data is stored primarily on Your device, and if You choose to create an account, it may also be synchronized to secure cloud storage. This Policy explains what information the Application accesses, how it is used, and Your rights regarding that information.</p>
+            <p>By using the Application, You acknowledge that You have read and understood this Privacy Policy.</p>
+
+            <h2>2. Information We Collect</h2>
+            <h3>2.1. Locally Stored User Data</h3>
+            <p>EnglishFit stores the following information <strong>on Your device or in browser-managed local application storage</strong> using available local storage mechanisms:</p>
+            <div class="indent">
+                <p>(a) <strong>Profile Information</strong>: display name, bio text, and avatar photo, as provided voluntarily by You;</p>
+                <p>(b) <strong>Learning Progress</strong>: lesson completion status, scores, vocabulary progress, streak data, and practice history;</p>
+                <p>(c) <strong>Application Preferences</strong>: language settings, notification preferences, theme selections, and other user-configurable options.</p>
+            </div>
+
+            <h3>2.2. Information We Do NOT Collect</h3>
+            <p>Regardless of whether You use a guest or registered account, EnglishFit does <strong>NOT</strong> collect, transmit, or store:</p>
+            <div class="indent">
+                <p>(a) Precise GPS location data;</p>
+                <p>(b) Advertising identifiers or device fingerprints;</p>
+                <p>(c) Contacts, calendar, or other personal data from Your device;</p>
+                <p>(d) Any data for the purpose of advertising, profiling, or sale to third parties.</p>
+            </div>
+
+            <h3>2.3. Limited Product Analytics</h3>
+            <p>In production releases, EnglishFit uses <strong>Firebase Analytics</strong> to measure how core practice flows are used and to improve routing and remediation.</p>
+            <p>This may include:</p>
+            <div class="indent">
+                <p>(a) custom in-app events such as practice start, resume, repair, and weak-topic repeat;</p>
+                <p>(b) lesson-related metadata such as lesson identifiers and grammar tags when relevant to the event;</p>
+                <p>(c) analytics identifiers and technical usage data collected by Google Analytics for Firebase, such as app-instance identifiers and device/app usage information, as described in Google's Firebase documentation.</p>
+            </div>
+            <p>Google may derive an approximate region from network data; precise GPS location is not collected. Advertising ID collection and ad-personalization signals are disabled. We do <strong>not</strong> use analytics data for advertising, sale to third parties, or cross-app profiling.</p>
+
+            <h3>2.4. Optional Account Registration</h3>
+            <p>EnglishFit offers optional account creation using email/password or Google Sign-In. You may also use the Application as a guest without any registration.</p>
+            <p>If You choose to create an account:</p>
+            <div class="indent">
+                <p>(a) <strong>Email Registration</strong>: Your email address and encrypted password are stored securely via Firebase Authentication;</p>
+                <p>(b) <strong>Google Sign-In</strong>: Authentication is handled by Google. We receive only basic profile information (name, email) necessary for account identification;</p>
+                <p>(c) <strong>Cloud Sync</strong>: Your learning progress may be synchronized to cloud storage to enable cross-device access;</p>
+                <p>(d) <strong>Guest Mode</strong>: All functionality remains available without creating an account. Guest learning progress stays local; the limited product analytics described in Section 2.3 also applies to guest use in release builds.</p>
+            </div>
+
+            <h2>3. How We Use Information</h2>
+            <p>Information described in this Policy is used <strong>solely</strong> for the following purposes:</p>
+            <div class="indent">
+                <p>(a) <strong>Personalizing Your Experience</strong>: displaying Your chosen profile name, bio, and avatar within the Application;</p>
+                <p>(b) <strong>Tracking Learning Progress</strong>: recording lesson scores, vocabulary mastery, streaks, and practice history so You can monitor Your improvement over time;</p>
+                <p>(c) <strong>Preserving Preferences</strong>: retaining Your selected settings (language, theme, notifications) between sessions;</p>
+                <p>(d) <strong>Improving Core Practice Flows</strong>: understanding whether users start practice, resume unfinished work, repair mistakes, and return to weak-topic repeats so we can improve routing and remediation;</p>
+                <p>(e) <strong>Delivering Lesson Content</strong>: loading bundled lesson content (stored as local JSON assets) for offline use.</p>
+            </div>
+            <p>No information is used for advertising, sale to third parties, or any purpose beyond the direct functionality and improvement of the Application.</p>
+
+            <h2>4. Data Storage and Security</h2>
+            <p><strong>4.1. Local Storage.</strong> Profile, learning-progress, and preference data is stored on Your device or in browser-managed local application storage. Guest learning progress is stored locally; registered-user data may be synchronized as described in Section 4.2, and limited analytics events are processed separately as described in Section 2.3.</p>
+            <p><strong>4.2. Cloud Storage for Registered Users.</strong> If You create an account, the following data is synchronized to Google Cloud Firestore to enable cross-device access and data backup:</p>
+            <div class="indent">
+                <p>(a) Account information: email address, display name, and profile photo URL;</p>
+                <p>(b) Learning progress: completed lessons, scores, and total stars;</p>
+                <p>(c) User profile data;</p>
+                <p>(d) Unlocked achievements and their unlock dates;</p>
+                <p>(e) Theory progress: which lesson theories were opened and which theory quizzes were passed;</p>
+                <p>(f) Vocabulary progress: per-word learning status, correct answer counts, and last practice dates;</p>
+                <p>(g) Binary Choice exercise progress: iteration counts per exercise;</p>
+                <p>(h) Last synchronization timestamp.</p>
+            </div>
+            <p>Cloud data is stored on Google's infrastructure (Firebase / Google Cloud Platform) and is subject to <a href="https://cloud.google.com/security" target="_blank" rel="noopener">Google Cloud's security practices</a>.</p>
+            <p><strong>4.3.</strong> Data stored locally is protected by Your device's operating system security model, including application sandboxing. Access to Application data is restricted to the Application itself and is not shared with other applications.</p>
+            <p><strong>4.4.</strong> Authentication data (email and encrypted password or Google credentials) is managed by Firebase Authentication, a secure identity management service provided by Google. Passwords are never stored in plain text.</p>
+            <p><strong>4.5.</strong> We recommend that Users maintain standard device security practices, including screen lock, device encryption, and keeping the operating system up to date, to protect locally stored data.</p>
+            <p><strong>4.6.</strong> The Developer has access to cloud-stored data of registered users for the purpose of service maintenance and technical support. The Developer does not have access to data stored locally on Your device.</p>
+
+            <h2>5. Camera and Photo Access</h2>
+            <p><strong>5.1.</strong> The Application requests access to Your device camera and/or photo gallery <strong>only</strong> for the purpose of allowing You to set a profile avatar photo.</p>
+            <p><strong>5.2.</strong> Camera and gallery access is:</p>
+            <div class="indent">
+                <p>(a) <strong>Optional</strong> &mdash; the Application functions fully without granting this permission;</p>
+                <p>(b) <strong>User-initiated</strong> &mdash; access is requested only when You choose to set or change Your avatar photo;</p>
+                <p>(c) <strong>Local-only</strong> &mdash; the selected or captured photo is stored exclusively on Your device within the Application's local storage and is never uploaded, transmitted, or shared with any external service or server.</p>
+            </div>
+            <p><strong>5.3.</strong> You may revoke camera or gallery permissions at any time through Your device's system settings without affecting other Application functionality.</p>
+
+            <h2>6. Text-to-Speech</h2>
+            <p><strong>6.1.</strong> The Application uses the device's built-in text-to-speech (TTS) engine to provide audio pronunciation of phrases and vocabulary.</p>
+            <p><strong>6.2.</strong> Text-to-speech processing is performed <strong>entirely on Your device</strong> using the system's native TTS service. No text or audio data is transmitted to external servers by the Application for this purpose.</p>
+            <p><strong>6.3.</strong> The availability and quality of TTS functionality depends on the TTS engines and language packs installed on Your device.</p>
+
+            <h2>7. Third-Party Services</h2>
+            <p><strong>7.1.</strong> EnglishFit integrates the following third-party services:</p>
+            <div class="indent">
+                <p>(a) <strong>Firebase Authentication</strong> (Google) &mdash; for secure user account management, login via email/password, and Google Sign-In;</p>
+                <p>(b) <strong>Cloud Firestore</strong> (Google) &mdash; for cloud storage and synchronization of registered users' learning progress and profile data;</p>
+                <p>(c) <strong>Firebase Analytics</strong> (Google) &mdash; for limited product analytics related to core practice flows, such as practice start, resume, repair, and weak-topic repeat.</p>
+            </div>
+            <p>Firebase services are subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://firebase.google.com/terms" target="_blank" rel="noopener">Firebase Terms of Service</a>.</p>
+            <p><strong>7.2.</strong> All lesson content is bundled locally within the Application as JSON assets and does not require network access to function. Firebase services are used for optional accounts, data synchronization, and limited product analytics. The Application does not connect to in-app purchase services.</p>
+            <p><strong>7.3.</strong> EnglishFit does <strong>not</strong> use advertising networks and does not share user data with third parties for advertising or profiling purposes. Analytics is used only for product improvement and core practice measurement.</p>
+            <p><strong>7.4.</strong> Should future versions of the Application introduce additional third-party service integrations (such as AI-powered features), this Privacy Policy will be updated accordingly prior to or concurrent with the release of such features. Users will be notified of material changes as described in Section 10.</p>
+
+            <h2>8. Children's Privacy</h2>
+            <p><strong>8.1.</strong> EnglishFit is a general-audience language practice application. We do not knowingly collect personal information from children under the age of 13 (or the applicable age of digital consent in Your jurisdiction).</p>
+            <p><strong>8.2.</strong> Account registration is optional and not required to use the Application. In guest mode, no account data or cloud learning-progress record is created; Firebase Analytics may still process the limited events described in Section 2.3. For registered users under the applicable age of digital consent, parental or guardian consent is required.</p>
+            <p><strong>8.3.</strong> If You are a parent or guardian and believe that Your child has provided personal information through the Application beyond what is described in this Policy, please contact us using the information provided in Section 11.</p>
+
+            <h2>9. Data Retention and Deletion</h2>
+            <p><strong>9.1.</strong> <strong>Local data</strong> is retained on Your device for as long as the Application is installed. <strong>Cloud data</strong> of registered users is retained on Firebase servers for as long as the user account exists. Firebase Analytics data is retained according to the Firebase project's retention settings and Google's policies; aggregated or de-identified metrics may be retained for longer.</p>
+            <p><strong>9.2.</strong> You may delete Your local data at any time by:</p>
+            <div class="indent">
+                <p>(a) <strong>Clearing Application data</strong> through Your device's system settings (Settings &rarr; Apps &rarr; EnglishFit &rarr; Clear Data / Clear Storage);</p>
+                <p>(b) <strong>Uninstalling the Application</strong>, which removes all locally stored Application data from Your device;</p>
+                <p>(c) Using any <strong>in-app data management features</strong>, if available, to reset progress or delete profile information.</p>
+            </div>
+            <p><strong>9.3. For registered users</strong>, You may delete Your cloud-stored data by:</p>
+            <div class="indent">
+                <p>(a) <strong>Deleting Your account</strong> via Settings &rarr; Delete Account in the Application. This process includes a two-step confirmation (confirmation dialog followed by typing a confirmation word). Upon deletion, the following data is permanently removed: all cloud data from Firebase servers (Firestore documents), all locally stored data, and the Firebase Authentication account. For Google Sign-In users, the Google account is also disconnected from the Application. If the authentication session has expired, re-authentication (password entry or Google re-sign-in) will be required before deletion can proceed;</p>
+                <p>(b) <strong>Contacting the Developer</strong> through the public <a href="account-deletion.html">EnglishFit account-deletion page</a> to request deletion without reinstalling the Application.</p>
+            </div>
+            <p><strong>9.4.</strong> Once deleted, locally stored data cannot be recovered. Cloud data deletion is permanent and irreversible upon completion of the deletion process.</p>
+
+            <h2>10. Changes to This Policy</h2>
+            <p><strong>10.1.</strong> We reserve the right to update or modify this Privacy Policy at any time. Changes will be reflected by an updated "Last Updated" date at the top of this document.</p>
+            <p><strong>10.2.</strong> Material changes to this Policy &mdash; particularly those involving the introduction of data collection, network transmission, third-party service integration, or any change to the local-only data model &mdash; will be communicated to Users through:</p>
+            <div class="indent">
+                <p>(a) A prominent notice within the Application;</p>
+                <p>(b) An updated Privacy Policy accessible within the Application and/or its distribution listing (e.g., App Store, Google Play Store).</p>
+            </div>
+            <p><strong>10.3.</strong> Your continued use of the Application following the posting of changes constitutes Your acceptance of such changes.</p>
+
+            <h2>11. Contact Information</h2>
+            <p><strong>11.1.</strong> For questions, concerns, or requests regarding this Privacy Policy or the Application's data practices, You may contact the Developer:</p>
+            <div class="indent">
+                <p>Email: <a href="mailto:d6apps.dev@gmail.com">d6apps.dev@gmail.com</a></p>
+            </div>
+            <p><strong>11.2.</strong> We will make reasonable efforts to respond to privacy-related inquiries in a timely manner.</p>
+
+            <div class="disclaimer">
+                BY USING THIS APPLICATION, YOU CONFIRM THAT YOU HAVE READ THIS PRIVACY POLICY, THAT YOU UNDERSTAND ITS CONTENTS, AND THAT YOU ACKNOWLEDGE THE DATA PRACTICES DESCRIBED HEREIN.
+            </div>
+            <p class="copyright">&copy; 2026 EnglishFit. All rights reserved.</p>
         </div>
-
-        <h3>2.3. Опциональная регистрация учётной записи</h3>
-        <p>EnglishFit предлагает опциональное создание учётной записи с помощью email/пароля или входа через Google. Вы также можете использовать Приложение в гостевом режиме без регистрации.</p>
-        <p>Если Вы решите создать учётную запись:</p>
-        <div class="indent">
-            <p>(а) <strong>Регистрация по email</strong>: Ваш адрес электронной почты и зашифрованный пароль хранятся безопасно через Firebase Authentication;</p>
-            <p>(б) <strong>Вход через Google</strong>: Аутентификация осуществляется Google. Мы получаем только базовую информацию профиля (имя, email), необходимую для идентификации учётной записи;</p>
-            <p>(в) <strong>Облачная синхронизация</strong>: Ваш прогресс обучения может быть синхронизирован с облачным хранилищем для доступа с разных устройств;</p>
-            <p>(г) <strong>Гостевой режим</strong>: Весь функционал остаётся доступным без предоставления персональных данных. Данные гостей хранятся только локально.</p>
-        </div>
-
-        <h2>3. Как мы используем информацию</h2>
-        <p>Вся локально хранимая информация используется <strong>исключительно</strong> в следующих целях:</p>
-        <div class="indent">
-            <p>(а) <strong>Персонализация</strong>: отображение выбранного Вами имени профиля, биографии и аватара в Приложении;</p>
-            <p>(б) <strong>Отслеживание прогресса обучения</strong>: фиксация результатов уроков, уровня освоения словарного запаса, серий занятий и истории практики;</p>
-            <p>(в) <strong>Сохранение настроек</strong>: сохранение выбранных Вами параметров между сеансами работы;</p>
-            <p>(г) <strong>Предоставление учебного контента</strong>: загрузка встроенного контента уроков для использования в офлайн-режиме.</p>
-        </div>
-        <p>Никакая информация не используется в рекламных, маркетинговых целях, для профилирования или в иных целях, выходящих за рамки непосредственного функционала Приложения.</p>
-
-        <h2>4. Хранение и безопасность данных</h2>
-        <p>4.1. <strong>Локальное хранение.</strong> Все пользовательские данные хранятся на Вашем устройстве с использованием стандартных механизмов локального хранения Android/iOS. Конфиденциальные данные хранятся в зашифрованном защищённом хранилище с криптографической проверкой целостности.</p>
-        <p>4.2. <strong>Облачное хранение для зарегистрированных пользователей.</strong> При создании учётной записи следующие данные синхронизируются с Google Cloud Firestore:</p>
-        <div class="indent">
-            <p>(а) информация аккаунта: email, отображаемое имя и URL фото профиля;</p>
-            <p>(б) прогресс обучения: пройденные уроки, баллы и общее количество звёзд;</p>
-            <p>(в) данные профиля пользователя;</p>
-            <p>(г) разблокированные достижения и даты их получения;</p>
-            <p>(д) прогресс по теории: какие теории были открыты и какие квизы пройдены;</p>
-            <p>(е) прогресс по словарному запасу: статус изучения каждого слова, количество правильных ответов и даты последней практики;</p>
-            <p>(ж) прогресс по упражнениям Binary Choice: количество пройденных итераций;</p>
-            <p>(з) временная метка последней синхронизации;</p>
-            <p>(и) статус подписки: тип плана и дата окончания (при наличии).</p>
-        </div>
-        <p>Облачные данные хранятся на инфраструктуре Google (Firebase / Google Cloud Platform) и подчиняются <a href="https://cloud.google.com/security">практикам безопасности Google Cloud</a>.</p>
-        <p>4.3. Локально хранимые данные защищены моделью безопасности операционной системы Вашего устройства.</p>
-        <p>4.4. Данные аутентификации управляются Firebase Authentication. Пароли никогда не хранятся в открытом виде.</p>
-        <p>4.5. Мы рекомендуем Пользователям соблюдать стандартные меры безопасности устройства.</p>
-        <p>4.6. Разработчик имеет доступ к облачным данным зарегистрированных пользователей в целях технического обслуживания. Разработчик не имеет доступа к данным, хранящимся локально на Вашем устройстве.</p>
-
-        <h2>5. Доступ к камере и фотографиям</h2>
-        <p>5.1. Приложение запрашивает доступ к камере и/или фотогалерее <strong>исключительно</strong> для установки фото аватара профиля.</p>
-        <p>5.2. Доступ является: <strong>необязательным</strong>, <strong>инициируемым пользователем</strong> и <strong>локальным</strong> — фотография никогда не загружается на внешние серверы.</p>
-        <p>5.3. Вы можете отозвать разрешения в любое время через системные настройки устройства.</p>
-
-        <h2>6. Преобразование текста в речь</h2>
-        <p>6.1. Приложение использует встроенный механизм TTS устройства для аудиопроизношения фраз и словарного запаса.</p>
-        <p>6.2. Обработка выполняется <strong>полностью на Вашем устройстве</strong>. Данные не передаются на внешние серверы.</p>
-
-        <h2>7. Сторонние сервисы</h2>
-        <p>7.1. EnglishFit интегрирует следующие сторонние сервисы:</p>
-        <div class="indent">
-            <p>(а) <strong>Firebase Authentication</strong> (Google) — для безопасного управления учётными записями;</p>
-            <p>(б) <strong>Cloud Firestore</strong> (Google) — для облачного хранения и синхронизации данных;</p>
-            <p>(в) <strong>Сервисы внутренних покупок</strong>: RuStore Billing, Apple StoreKit или Google Play Billing (в зависимости от платформы).</p>
-        </div>
-        <p>EnglishFit не собирает и не хранит Ваши платёжные реквизиты.</p>
-        <p>Сервисы Firebase регулируются <a href="https://policies.google.com/privacy">Политикой конфиденциальности Google</a>. RuStore Billing регулируется <a href="https://www.rustore.ru/legal/privacy">Политикой конфиденциальности RuStore</a>. Apple StoreKit регулируется <a href="https://www.apple.com/legal/privacy/">Политикой конфиденциальности Apple</a>.</p>
-        <p>7.2. Весь учебный контент встроен в Приложение и не требует сетевого доступа.</p>
-        <p>7.3. EnglishFit <strong>не</strong> использует рекламные сети, платформы аналитики или сервисы отчётов о сбоях.</p>
-
-        <h2>8. Правовые основания обработки (GDPR Статья 6)</h2>
-        <div class="indent">
-            <p>8.1. <strong>Согласие</strong> — опциональная регистрация, облачная синхронизация, фото профиля. Отзыв согласия: удаление аккаунта или обращение по email d6apps.dev@gmail.com.</p>
-            <p>8.2. <strong>Исполнение договора</strong> — основной функционал, управление подпиской, обработка покупок.</p>
-            <p>8.3. <strong>Законные интересы</strong> — поддержание безопасности и функциональности Приложения.</p>
-        </div>
-
-        <h2>9. Международная передача данных</h2>
-        <p>9.1. При создании аккаунта данные передаются на серверы Google Cloud Platform (Firebase) в <strong>США</strong>.</p>
-        <p>9.2. Передача осуществляется на основании Стандартных договорных условий (СДУ) Европейской комиссии.</p>
-        <p>9.3. Для гостевых пользователей международная передача данных не осуществляется.</p>
-
-        <h2>10. Хранение и удаление данных</h2>
-        <div class="indent">
-            <p>(а) <strong>Локальные данные</strong>: хранятся на устройстве в течение всего периода установки Приложения;</p>
-            <p>(б) <strong>Облачные данные</strong>: хранятся на серверах Firebase в течение существования учётной записи;</p>
-            <p>(в) <strong>Удаление учётной записи</strong>: все облачные данные удаляются в течение <strong>30 дней</strong>;</p>
-            <p>(г) <strong>Записи о подписках</strong>: статус кэшируется локально и удаляется при удалении приложения;</p>
-            <p>(д) <strong>Резервные копии</strong>: могут сохраняться до <strong>30 дней</strong> дополнительно.</p>
-        </div>
-        <p><strong>Для зарегистрированных пользователей:</strong> удалите аккаунт через Настройки → Удалить аккаунт (двухэтапное подтверждение). Или напишите на d6apps.dev@gmail.com.</p>
-
-        <h2>11. Права субъектов данных (GDPR Статьи 15-22)</h2>
-        <p>Вы имеете право на: доступ, исправление, удаление («право быть забытым»), ограничение обработки, переносимость данных и возражение. EnglishFit не осуществляет автоматизированного принятия решений.</p>
-        <p>Для реализации прав: <strong>d6apps.dev@gmail.com</strong>. Ответ в течение 30 дней.</p>
-
-        <h2>12. Уведомление о нарушении данных</h2>
-        <p>В случае нарушения безопасности мы уведомим надзорный орган в течение 72 часов и затронутых пользователей без неоправданной задержки.</p>
-
-        <h2>13. Автоматизированное принятие решений</h2>
-        <p>EnglishFit <strong>не</strong> использует автоматизированное принятие решений или профилирование. Приложение не использует файлы cookie или технологии отслеживания.</p>
-
-        <h2>14. Изменения настоящей Политики</h2>
-        <p>Мы оставляем за собой право обновлять Политику. О существенных изменениях будет уведомлено через Приложение. Продолжение использования означает согласие с изменениями.</p>
-
-        <h2>15. Конфиденциальность детей</h2>
-        <p>Мы не собираем данные детей младше 13 лет. Регистрация опциональна. Гостевой режим не собирает персональную информацию.</p>
-
-        <h2>16. Контролёр данных и контактная информация</h2>
-        <p><strong>D6 Apps</strong><br>Email: <a href="mailto:d6apps.dev@gmail.com">d6apps.dev@gmail.com</a></p>
-        <p>Ответ на запросы в течение 30 дней.</p>
-
-        <hr>
-        <p><strong>ИСПОЛЬЗУЯ ДАННОЕ ПРИЛОЖЕНИЕ, ВЫ ПОДТВЕРЖДАЕТЕ, ЧТО ОЗНАКОМИЛИСЬ С НАСТОЯЩЕЙ ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ, ПОНИМАЕТЕ ЕЁ СОДЕРЖАНИЕ И ПРИНИМАЕТЕ К СВЕДЕНИЮ ОПИСАННЫЕ В НЕЙ ПРАКТИКИ ОБРАБОТКИ ДАННЫХ.</strong></p>
-        <p><em>&copy; 2026 EnglishFit. Все права защищены.</em></p>
     </div>
-    <div class="footer">
-        <a href="index.html">Назад к юридическим документам</a>
-    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('lang-ru').classList.toggle('active', lang === 'ru');
+            document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.documentElement.lang = lang;
+            localStorage.setItem('ef-lang', lang);
+        }
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+            var isDark = document.body.classList.contains('dark');
+            document.getElementById('btn-theme').innerHTML = isDark ? '&#9788;' : '&#9790;';
+            localStorage.setItem('ef-theme', isDark ? 'dark' : 'light');
+        }
+        (function() {
+            var savedTheme = localStorage.getItem('ef-theme');
+            if (savedTheme === 'dark') { document.body.classList.add('dark'); document.getElementById('btn-theme').innerHTML = '&#9788;'; }
+            var savedLang = localStorage.getItem('ef-lang');
+            if (savedLang) switchLang(savedLang);
+        })();
+    </script>
 </body>
 </html>
